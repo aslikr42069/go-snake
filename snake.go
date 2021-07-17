@@ -140,9 +140,9 @@ func (g *Game) Update() error {
  
  if(g.snakeBody[0].x == 1 && next_pos.x == -1){
   game_over = true;
- } else if(g.snakeBody[0].x == 32 && next_pos.x == 1){
+ } else if(g.snakeBody[0].x == 30 && next_pos.x == 1){
   game_over = true;
- } else if(g.snakeBody[0].y == 32 && next_pos.y == 1){
+ } else if(g.snakeBody[0].y == 30 && next_pos.y == 1){
   game_over = true;
  } else if(g.snakeBody[0].y == 1 && next_pos.y == -1){
   game_over = true;
