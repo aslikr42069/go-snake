@@ -43,7 +43,7 @@ func moveBody(info bodyInfo, snakeBody []bodyNode, next_x int, next_y int) []bod
 }
 
 func generateApple(info bodyInfo, snakeBody []bodyNode, width int) (bodyNode) {
- appleCoords := bodyNode{rand.Intn(width-1), rand.Intn(width-1)};
+ appleCoords := bodyNode{rand.Intn(width-2)+1, rand.Intn(width-2)+1};
  for i := 0; i < info.end; i++{
   if (appleCoords.x == snakeBody[i].x && appleCoords.y == snakeBody[i].y){
    return generateApple(info, snakeBody, width);
